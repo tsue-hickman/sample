@@ -1,0 +1,36 @@
+<%- include('partials/head') %> <%- include('partials/header') %> <%-
+include('partials/navigation') %>
+
+<main>
+  <section class="hero">
+    <img
+      src="/images/hero.jpg"
+      alt="CSE Motors Hero Image"
+      class="hero-image"
+    />
+    <h2>Welcome to CSE Motors</h2>
+    <p>Find your dream car today!</p>
+  </section>
+  <section class="cars">
+    <h2>Featured Vehicles</h2>
+    <div class="car-grid">
+      <article class="car-item">
+        <img src="/images/car1.jpg" alt="Car Model 1" />
+        <h3>Model 1</h3>
+        <p>Starting at $25,000</p>
+      </article>
+      <article class="car-item">
+        <img src="/images/car2.jpg" alt="Car Model 2" />
+        <h3>Model 2</h3>
+        <p>Starting at $30,000</p>
+      </article>
+      <article class="car-item">
+        <img src="/images/car3.jpg" alt="Car Model 3" />
+        <h3>Model 3</h3>
+        <p>Starting at $35,000</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

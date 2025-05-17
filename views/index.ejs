@@ -1,36 +1,71 @@
-<%- include('partials/head') %> <%- include('partials/header') %> <%-
-include('partials/navigation') %>
+<%- include('../partials/head') %>
+<body>
+  <div class="wrapper">
+    <%- include('../partials/header') %>
+    <%- include('../partials/navigation') %>
 
-<main>
-  <section class="hero">
-    <img
-      src="/images/hero.jpg"
-      alt="CSE Motors Hero Image"
-      class="hero-image"
-    />
-    <h2>Welcome to CSE Motors</h2>
-    <p>Find your dream car today!</p>
-  </section>
-  <section class="cars">
-    <h2>Featured Vehicles</h2>
-    <div class="car-grid">
-      <article class="car-item">
-        <img src="/images/car1.jpg" alt="Car Model 1" />
-        <h3>Model 1</h3>
-        <p>Starting at $25,000</p>
-      </article>
-      <article class="car-item">
-        <img src="/images/car2.jpg" alt="Car Model 2" />
-        <h3>Model 2</h3>
-        <p>Starting at $30,000</p>
-      </article>
-      <article class="car-item">
-        <img src="/images/car3.jpg" alt="Car Model 3" />
-        <h3>Model 3</h3>
-        <p>Starting at $35,000</p>
-      </article>
-    </div>
-  </section>
-</main>
+    <main>
+      <section class="hero">
+        <h1>Welcome to CSE Motors!</h1>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>DMC Delorean</h2>
+            <ul>
+              <li>3 Cup holders</li>
+              <li>Superman doors</li>
+              <li>Fuzzy dice!</li>
+            </ul>
+            <button class="own-btn">Own Today</button>
+          </div>
+          <img src="/images/vehicles/delorean.jpg" alt="DMC Delorean" class="hero-img">
+        </div> 
+      </section>
 
-<%- include('partials/footer') %>
+      <div class="main-content">
+        <section class="upgrades">
+          <h2>Delorean Upgrades</h2>\
+          <div class="upgrade-grid">
+            <div class="upgrade-item">
+              <div class="img-container">
+                <img src="/images/upgrades'flux-cap.jpg" alt="Flux Capacitor">
+              </div>
+              <a href="#">Flux Capacitor</a>
+            </div>
+            <div class="upgrade-item">
+              <div class="img-container">
+                <img src="/images/upgrades/flame.jpg" alt="Flame Decals">
+              </div>
+              <a href="#">Flame Decals</a>
+            </div>
+            <div class="upgrade-item">
+              <div class="img-container">
+                <img src="/images/upgrades/bumper_sticker.jpg" alt="Bumper Stickers">
+              </div>
+              <a href="#">Bumper Stickers</a>
+            </div>
+            <div class="upgrade-item">
+              <div class="img-container">
+                <img src="/images/upgrades/hub-cap.jpg" alt="Hub Caps">
+              </div>
+              <a href="#">Hub Caps</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <h2>DMC Delorean Reviews</h2>
+          <ul>
+            <li>"So fast it's almost like traveling in time." (4/5)</li>
+            <li>"Coolest ride on the road." (4/5)</li>
+            <li>"I'm feeling Marty McFly!" (5/5)</li>
+            <li>"The most futuristic ride of our generation." (4.5/5)</li>
+            <li>"80's livin and I love it!" (3/5)</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <%- include('../partials/footer') %>
+  </div>
+</body>
+</html>
